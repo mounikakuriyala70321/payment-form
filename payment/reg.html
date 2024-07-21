@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <form style="background-color: rgb(0, 221, 255);">
+    <h2 style="font-family: 'Times New Roman', Times, serif;"><b>Step 1: Your details</b></h2>
+    <div class="name" >  
+        <label for="name">Name</label>&emsp;       <!--&emsp , &ensp , &nbsp ==> to create space beside the adajacent content -->
+        <input type="text" name="name" placeholder="first and last name">
+    </div><br>
+    <div class="email">
+        <label for="email">Email</label>&emsp;
+        <input type="text" name="email" placeholder= "email@gmail.com">
+    </div><br>
+    <div class="phone">
+        <label for="name">Phone</label>&emsp;
+        <input type="tel" placeholder="Eg. +91 0000000000" name="phone" pattern="\+91 \d{10}" maxlength="14">
+    </div><br>
+    <h2><b>Step 2: Delivery address</b></h2>
+    <div class="address">
+        <label for="address">Address</label>&emsp;
+        <input id="add" type="textarea" name="address" placeholder="  " maxlength="500">
+    </div><br>
+    <div class="postcode">
+        <label for="address" >Post code</label>&emsp;
+        <input type="number" name="postcode" placeholder="  " maxlength="10">
+    </div><br>
+    <div class="country">
+        <label for="country" >Country</label>&emsp;
+        <input type="text" name="country" placeholder="  " >
+    </div>
+    <h2><b>Step 3:Card details</b></h2>
+    <div class="card">
+        <label for="card">Card Type</label><br><br>
+        &emsp;<input type="radio" id="visa" name="option" > 
+        <img id="visa" src="visa-logo.png" alt="visa" width="30px" height="14px">
+        <label for="visa">VISA</label> &emsp;
+        <input type="radio" id="Amex" name="option" value="card number" >
+        <img id="Amex" src="Amex Card.png" alt="amex" width="30px" height="14px">
+        <label for="Amex">AmEx</label> &emsp;
+        <input type="radio" id="master" name="option" >
+        <img id="Mastercard" src="Mastercard-Logo-PNG.png" alt="mastercard" width="30px" height="14px">
+        <label for="master">Mastercard</label>
+    </div><br>
+    <div class="cardno">
+        <label for="cardno">Card number</label>&emsp;
+        <input type="number" name="num" maxlength="10" >         
+    </div><br>
+    <div class="security">
+        <label for="security">security code</label>&emsp;
+        <input type="password" name="code" maxlength="5">
+    </div><br>
+    <div class="name">
+        <label for="card name">Name on card</label>&emsp;
+        <input type="text" name="name" placeholder=" Exact name as on the card" style="width: 200px;">
+    </div><br>
+    <center><button>BUY IT!</button></center>
+</form>
+</body>
+</html>
